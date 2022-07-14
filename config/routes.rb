@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'users/new'
+  scope "(:locale)", locale: /en|vi/ do
+    get "/users/new"
+    get "/static_pages/home"
+    get "/static_pages/help"
+    get "/static_pages/about"
+    get "/test", to: "static_pages#home"
+    root "static_pages#home"
+  end
 end
 
