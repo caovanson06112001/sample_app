@@ -25,13 +25,15 @@ en:
   english: "english"
   vietnamese: "vietnamese"
   learn_enough: "learn enough"
-<<<<<<< HEAD
   Michael_Hartl: "Michael Hartl"
   welcome: "Welcome to the Sample App!"
   create_my_account: "Create my account"
   confirmation: "confirmation"
   password: "password"
   name: "name"
-=======
-  Michael_Hartl : "Michael Hartl"
->>>>>>> main
+  invalid_email_password_combination: " invalid email password combination"
+  log_out: "Log out"
+  users: "Users"
+  profile: "Profile"
+  settings: "Settings"
+  account: "Account"
