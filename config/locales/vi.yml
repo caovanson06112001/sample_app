@@ -24,13 +24,15 @@ vi:
   english: "Tiếng anh"
   vietnamese: "Tiếng việt"
   learn_enough: "Học đủ"
-<<<<<<< HEAD
   Michael_Hartl: "Michael Hartl"
   welcome: "Chào mừng bạn đến với ứng dụng mẫu!"
   create_my_account: "Tạo tài khoản"
   confirmation: "Xác nhận"
   password: "Mật khẩu"
   name: "Họ và tên"
-=======
-  Michael_Hartl : "Michael Hartl"
->>>>>>> main
+  invalid_email_password_combination: " mật khẩu sai hoặc tài khoản chưa tồn tại"
+  log_out: "Đăng xuất"
+  users: "Người dùng"
+  profile: "Tài khoản"
+  settings: "Cài đặt"
+  account: "Tài khoản"

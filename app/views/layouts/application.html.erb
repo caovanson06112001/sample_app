@@ -8,37 +8,15 @@
     <%= stylesheet_link_tag "custom", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-<<<<<<< HEAD
-=======
-
->>>>>>> main
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to t("sample_app"), static_pages_home_path , id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to t("home"), static_pages_help_path %></li>
-            <li><%= link_to t("help"), static_pages_about_path %></li>
-            <li><%= link_to t("log_in"), "#" %></li>
-            <li><%= link_to t("english"), locale: :en %></li>
-            <li><%= link_to t("vietnamese"), locale: :vi %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render "shared/header" %>
     <div class="container">
-<<<<<<< HEAD
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
       <%= render "layouts/footer" %>
       <%= debug params if Rails.env.development? %>
-=======
-      <%= yield %>
-      <%= render "layouts/footer" %>
->>>>>>> main
     </div>
   </body>
 </html>
