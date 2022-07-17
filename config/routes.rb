@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
-    resources :users, only: %i(new create show)
+    resources :users
     get "/signup", to: "users#new"
     get "/static_pages/home"
     get "/static_pages/help"

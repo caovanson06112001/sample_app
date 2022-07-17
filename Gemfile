@@ -15,6 +15,9 @@ gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
+gem "pagy"
+gem "faker", "2.1.2"
+gem "bootstrap-will_paginate", "1.0.0"
 
 group :development, :test do
   gem "byebug", platforms: %i(mri mingw x64_mingw)

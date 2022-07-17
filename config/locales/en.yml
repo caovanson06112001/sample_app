@@ -37,3 +37,12 @@ en:
   profile: "Profile"
   settings: "Settings"
   account: "Account"
+  profile_updated: "Profile updated"
+  edit_user: "Edit user"
+  user:
+    update: "Update your profile"
+    save_change: "Save changes"
+    is_login: "Please login ."
+    edit_user: "Edit user"
+    delete: "delete"
+    usersave_change: "Save changes"

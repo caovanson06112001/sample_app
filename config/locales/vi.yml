@@ -36,3 +36,13 @@ vi:
   profile: "Tài khoản"
   settings: "Cài đặt"
   account: "Tài khoản"
+  profile_updated: "Cập nhật hồ sơ"
+  edit_user: "chỉnh sửa"
+  user:
+    update: "chỉnh sửa hồ sơ của bạn"
+    save_change: "Lưu thay đổi"
+    is_login: "Làm ơn hãy đăng nhập"
+    edit_user: "chỉnh sửa hồ sơ"
+    delete: "xoá"
+    usersave_change: "Lưu thay đổi"
+    all: "Danh sách người dùng"
