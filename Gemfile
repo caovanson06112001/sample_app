@@ -12,12 +12,14 @@ gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6"
 gem "rails-i18n"
+gem "net-smtp"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
 gem "pagy"
 gem "faker", "2.1.2"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "figaro"
 
 group :development, :test do
   gem "byebug", platforms: %i(mri mingw x64_mingw)

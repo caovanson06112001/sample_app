@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
+    resources :account_activations, only: :edit
     resources :users
     get "/signup", to: "users#new"
     get "/static_pages/home"
