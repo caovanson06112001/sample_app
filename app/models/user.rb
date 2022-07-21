@@ -14,6 +14,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token
 
+  scope :latest_users, -> {order created_at: :desc}
+
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
