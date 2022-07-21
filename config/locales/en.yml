@@ -37,5 +37,6 @@ en:
   profile: "Profile"
   settings: "Settings"
   account: "Account"
+  remember: "Remember me on this computer"
   user:
     failed: "failed"
