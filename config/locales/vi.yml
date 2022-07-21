@@ -30,5 +30,11 @@ vi:
   confirmation: "Xác nhận"
   password: "Mật khẩu"
   name: "Họ và tên"
+  invalid_email_password_combination: " mật khẩu sai hoặc tài khoản chưa tồn tại"
+  log_out: "Đăng xuất"
+  users: "Người dùng"
+  profile: "Tài khoản"
+  settings: "Cài đặt"
+  account: "Tài khoản"
   user:
     failed: "đăng ký thất bại"
