@@ -1,7 +1,23 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(new create)
   before_action :find_user, except: %i(index new create)
+  before_action :logged_in_user, except: %i(new create)
   before_action :correct_user, only: %i(edit update)
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following
+    @title = t "user.following"
+    @pagy, @users = pagy @user.following
+    render :show_follow
+  end
+
+  def followers
+    @title = t "user.followers"
+    @pagy, @users = pagy @user.followers
+    render :show_follow
+  end
 
   def index
     @pagy, @users = pagy User.latest_users, items: Settings.max_page

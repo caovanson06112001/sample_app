@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 2022_07_24_172421) do
     t.boolean "activated"
     t.string "remember_digest"
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.datetime "activated_at"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
@@ -77,6 +78,11 @@ ActiveRecord::Schema.define(version: 2022_07_24_172421) do
     t.datetime "reset_sent_at"
     t.boolean "admin"
 >>>>>>> 8f72720 ( chap 13)
+=======
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
+    t.boolean "admin"
+>>>>>>> cc887cb ( chap 13)
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
