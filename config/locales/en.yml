@@ -31,5 +31,11 @@ en:
   confirmation: "confirmation"
   password: "password"
   name: "name"
+  invalid_email_password_combination: " invalid email password combination"
+  log_out: "Log out"
+  users: "Users"
+  profile: "Profile"
+  settings: "Settings"
+  account: "Account"
   user:
     failed: "failed"
