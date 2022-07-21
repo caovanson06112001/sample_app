@@ -11,7 +11,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts.recent_posts,
+                              items: Settings.max_page
+  end
 
   def create
     @user = User.new user_params
