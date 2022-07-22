@@ -78,11 +78,11 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {host: "localhost:3000" }
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com", #smtp.mailtrap.io
-    port: "587",
-    user_name: ENV["53. Cao Văn Sơn"],
-    password: ENV["ffjbqjsemhthmqqs"],
-    authentication: :plain, #:cram_md5
-    enable_starttls_auto: true
+    :user_name => '8d2c0af45ae3bc',
+    :password => '077eca2419eba0',
+    :address => 'smtp.mailtrap.io',
+    :domain => 'smtp.mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
   }
 end
