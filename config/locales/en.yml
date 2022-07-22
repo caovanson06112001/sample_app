@@ -40,3 +40,13 @@ en:
   remember: "Remember me on this computer"
   user:
     failed: "failed"
+    update: "Update your profile"
+    save_change: "Save changes"
+    is_login: "Please login ."
+    edit_user: "Edit user"
+    delete: "delete"
+    usersave_change: "Save changes"
+    user_deleted: "User deleted"
+    delete_fail: "Delete fail!"
+    sure_delete: "Are you sure?"
+    all: "All"
