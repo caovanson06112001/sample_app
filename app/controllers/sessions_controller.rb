@@ -7,9 +7,14 @@ class SessionsController < ApplicationController
 
   def create
     if @user.authenticate(params[:session][:password])
-      log_in @user
-      params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
-      redirect_to @user
+      if @user.activated
+          log_in @user
+          params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
+          redirect_back_or @user
+        else
+          flash[:warning] = t "user.acc"
+          redirect_to root_path
+      end
     else
       flash.now[:danger] = t "invalid_email_password_combination"
       render :new
@@ -27,7 +32,7 @@ class SessionsController < ApplicationController
     @user = User.find_by email: params.dig(:session, :email)&.downcase
     return if @user
 
-    flash[:danger] = t ".controller.find_error"
+    flash[:danger] = t "controller.find_error"
     redirect_to root_path
   end
 end
