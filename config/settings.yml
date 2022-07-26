@@ -10,3 +10,4 @@ min_pass: 6
 max_page: 6
 max_size: 50
 max_avatar: 80
+max_hour: 2
