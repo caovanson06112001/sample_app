@@ -39,6 +39,9 @@ vi:
   remember: "Ghi nhớ đăng nhập của tôi"
   forgot_password: "Quên mật khẩu"
   submit: "Gửi"
+  please_login: "làm ơn đăng nhập."
+  post: "bai viet"
+  follow: "theo doi"
   user:
     failed: "đăng ký thất bại"
     update: "chỉnh sửa hồ sơ của bạn"
@@ -66,3 +69,11 @@ vi:
     done_reset: "Đã đổi mật khẩu"
     pass_e: "Đặt lại mật khẩu đã hết hạn."
     password_reset: "đổi mật khẩu"
+  post:
+    ss: "Thêm bài viết thành công"
+    delete: "Đã xoá bài viết"
+    delete-failed: "xoá bài viết thất bại"
+    content: "Nội dung ..................."
+  img:
+    validate: "ảnh không đúng định dạng"
+    img: "Kích thước ảnh không quá 5MB"

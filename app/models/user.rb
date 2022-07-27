@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
+  attr_accessor :remember_token, :activation_token, :reset_token
+
   before_save :downcase_email
   before_create :create_activation_digest
 
@@ -12,8 +16,6 @@ class User < ApplicationRecord
 
   validates :password, presence: true, length: {minimum: Settings.min_pass},
     allow_nil: true
-
-  attr_accessor :remember_token, :activation_token, :reset_token
 
   scope :latest_users, -> {order created_at: :desc}
 
@@ -30,6 +32,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    microposts
   end
 
   def remember
@@ -57,7 +63,8 @@ class User < ApplicationRecord
 
   def create_reset_digest
     self.reset_token = User.new_token
-    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
   end
 
   def send_password_reset_email

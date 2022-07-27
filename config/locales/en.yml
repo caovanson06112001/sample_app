@@ -40,6 +40,9 @@ en:
   remember: "Remember me on this computer"
   forgot_password: "Forgot password"
   submit: "Submit"
+  please_login: "Please log in."
+  micropost: "micropost"
+  follow: "follow"
   user:
     failed: "failed"
     update: "Update your profile"
@@ -67,3 +70,11 @@ en:
     pass_e: "Password reset has expired."
     password_reset: "Password reset"
     click_reset: "To reset your password click the link below:"
+  post:
+    ss: "Micropost created!"
+    delete: "Micropost deleted"
+    delete-failed: "Deleted fail"
+    content: "Content ..................."
+  img:
+    validate: "must be a valid image format"
+    size: "should be less than 5MB"
