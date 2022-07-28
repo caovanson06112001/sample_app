@@ -3,8 +3,12 @@ Rails.application.routes.draw do
     resources :users
     resources :account_activations, only: :edit
     resources :password_resets, only: %i(new create edit update)
-    resources :microposts, only: %i(create destroy)
-    resources :relationships, only: %i(create destroy)
+    resources :microposts, :relationships, only: %i(create destroy)
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
     get "/signup", to: "users#new"
     get "/static_pages/home"
     get "/static_pages/test", to: "static_pages#test"
